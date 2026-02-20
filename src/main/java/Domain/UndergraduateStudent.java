@@ -30,7 +30,7 @@ public class UndergraduateStudent extends Student{
     }
     @Override
     public String getStudentType() {
-        return "You are an undergraduate student.";
+        return "undergraduate student.";
     }
     @Override
     public void displayStudentDetails() {
@@ -38,7 +38,9 @@ public class UndergraduateStudent extends Student{
                 "Student ID: " + studentId +
                 "\nStudent name: " + name +
                 "\nStudent email: " + email +
-                "\nDepartment: " + department);
+                "\nDepartment: " + department+
+                "\nCredit hours: " + creditHours +
+                "\nScholarship amount: " + scholarshipAmount);
     }
     //Builder class
     public static class Builder {

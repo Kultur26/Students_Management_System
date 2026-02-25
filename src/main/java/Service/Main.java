@@ -1,10 +1,17 @@
 package Service;
 import Domain.UndergraduateStudent;
 import Domain.GraduateStudent;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        UndergraduateStudent undergrad = new UndergraduateStudent.Builder()
+        Scanner kbd = new Scanner(System.in);
+        System.out.println("Which student are you(UngraduateStudent/Graduate): " +
+                kbd.nextLine());
+
+
+
+        /*UndergraduateStudent undergrad = new UndergraduateStudent.Builder()
                 .setStudentId("221312536")
                 .setName("Joshua Bonzet")
                 .setEmail("221312536@mycput.ac.za")
@@ -24,6 +31,6 @@ public class Main {
                 .setStipend(5000)
                 .build();
         System.out.println("You are a " + grad.getStudentType());
-        System.out.println("You tuition fee is: R" + grad.calculateTuition());
+        System.out.println("You tuition fee is: R" + grad.calculateTuition()); */
     }
 }
